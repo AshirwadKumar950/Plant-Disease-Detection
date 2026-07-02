@@ -2,17 +2,17 @@
 
 ## Overview
 
-This project presents a novel hybrid deep learning architecture for automated plant disease detection. Instead of relying entirely on pretrained convolutional networks, the model combines a **self-designed Convolutional Neural Network (CNN)** with a **Depthwise Separable Convolution-based Convolutional Block Attention Module (DS-CBAM)** and a **Vision Transformer (ViT)** to effectively learn both local and global image features.
+This project presents a novel hybrid deep learning architecture for automated plant disease detection. Instead of relying entirely on pretrained convolutional networks, the model combines a **self-designed Convolutional Neural Network CNN with a Depthwise Separable Convolution-based Convolutional Block Attention Module (DS-CBAM) and a Vision Transformer ViT to effectively learn both local and global image features.
 The proposed architecture is designed to improve disease classification accuracy while maintaining computational efficiency. The custom CNN extracts fine-grained local disease characteristics, the DS-CBAM module emphasizes informative feature regions through channel and spatial attention, and the Vision Transformer captures long-range contextual relationships across the image.
 
 
 ---- Architecture ----
 
-**Input Image (224 × 224 × 3)**
+Input Image (224 × 224 × 3)
 
 ⬇️
 
-**Self-Designed CNN**
+Self-Designed CNN
 
 * Custom convolutional feature extractor
 * Learns disease-specific local patterns such as lesions, discoloration, texture variations, and leaf damage
@@ -20,7 +20,7 @@ The proposed architecture is designed to improve disease classification accuracy
 
 ⬇️
 
-**Depthwise Separable CBAM (DS-CBAM)**
+Depthwise Separable CBAM (DS-CBAM)
 
 * Depthwise Separable Convolution for computational efficiency
 * Channel Attention to identify the most informative feature maps
@@ -28,15 +28,15 @@ The proposed architecture is designed to improve disease classification accuracy
 
 ⬇️
 
-**Vision Transformer (ViT)**
+Vision Transformer (ViT)
 
 * Feature embedding into transformer patches
-* Utilizes **only the last two Transformer Encoder layers**
+* Utilizes only the last two Transformer Encoder layers
 * Learns global relationships between different regions of the leaf image
 
 ⬇️
 
-**Classification Head**
+Classification Head
 
 * Fully Connected Layer
 * Softmax Activation
@@ -82,8 +82,6 @@ The model was trained and evaluated using the **PlantVillage** dataset containin
 | Recall              | 98.39% 
 | F1-Score            | 98.39% 
 | Validation Accuracy | 99.10% 
-
-> Replace the above values with your actual experimental results.
 
 ---
 
