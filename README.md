@@ -75,13 +75,13 @@ The model was trained and evaluated using the **PlantVillage** dataset containin
 
 ## Experimental Results
 
-| Metric              |      Score |
-| ------------------- | ---------: |
-| Test Accuracy       | **XX.XX%** |
-| Precision           | **XX.XX%** |
-| Recall              | **XX.XX%** |
-| F1-Score            | **XX.XX%** |
-| Validation Accuracy | **XX.XX%** |
+| Metric              | Score 
+| ------------------- | ------
+| Test Accuracy       | 98.39% 
+| Precision           | 98.41% 
+| Recall              | 98.39% 
+| F1-Score            | 98.39% 
+| Validation Accuracy | 99.10% 
 
 > Replace the above values with your actual experimental results.
 
